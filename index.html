@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VartueTech</title>
+    <link href="style.css">
+   
+
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+    scroll-behavior: smooth;
+}
+header {
+    background: linear-gradient(to right, #ffffff, #596868); /* Gradient background */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+   
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header-text h1 {
+    font-size: 2.5rem; /* Larger text for the company name */
+    margin: 0;
+    color: #13271b;
+    font-family: 'Arial', sans-serif;
+}
+
+
+        
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #8c98a7;
+            padding: 5px;
+        }
+
+        nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e4e0e0; /* Highlight color on hover */
+    text-decoration: underline;
+}
+
+        .hero {
+           
+            text-align: center;
+            
+            background: url('img/img\ web.PNG') no-repeat center center/cover;
+            color: rgb(204, 190, 190);
+            padding: 100px 20px;
+        }
+        
+
+        
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            margin-left: 2px;
+            
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #0c1883;
+            color: #0e0d0d;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background: #124761;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .services div {
+            flex: 1;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact {
+            background:  #758a91;
+            color: rgb(66, 62, 62);
+            padding: 2px;
+        }
+        footer {
+    background-color: #003366; /* Dark blue background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: #62b4b0;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 10px 0;
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/var.jpeg" alt="Logo" class="logo"> <!-- लोगो पहले -->
+        <div class="header-text">
+            <h1>VartueTech</h1>
+            <p></p>
+        </div>
+    </header>
+
+    <nav>
+        
+        <a href="#home" class="nav-button">Home</a>
+        <a href="about.html" class="nav-button">About Us</a>
+        <a href="services.html" class="nav-button">Services</a>
+        <a href="project.html" class="nav-button">Our Projects</a>
+        <a href="contact.html" class="nav-button">Contact Us</a>
+    
+    </nav>
+    <div class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="https://openai.com/sora/?shareId=14" type="video/mp4">
+            Aapka browser video tag ko support nahi karta.
+        </video>
+        <h1><span class="typing">You Imagine. We Create.</span></h1>
+        <p style="color: black;">Transform your ideas into reality with us.</p>
+        <button onclick="location.href='services.html';">Get Started </button>
+    </div>
+   
+
+
+
+<style>
+
+
+nav {
+    display: flex;                /* Aligns items horizontally */
+    gap: 10px;                    /* Space between buttons */
+  }
+
+
+  .nav-button {
+    display: inline-block;        /* Makes the links behave like buttons */
+    padding: 10px 15px;           /* Adds space inside the buttons */
+    font-size: 16px;              /* Text size */
+    color: rgb(49, 48, 48);                 /* Text color */
+    background-color: #71777e;    /* Button background */
+    border: none;                 /* Removes any borders */
+    border-radius: 5px;           /* Rounds the corners */
+    text-decoration: none;        /* Removes underline */
+    text-align: center; 
+    text-emphasis-color: rgb(112, 108, 108);          /* Centers the text */
+    cursor: pointer;              /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+  }
+
+  .nav-button:hover {
+    background-color: #484a4d;    /* Darker blue on hover */
+  }
+    .typing p{
+        font-size: small;
+        text-emphasis-color: rgb(41, 36, 36);
+    }
+
+    .hero {
+        position: relative;
+        color: rgb(15, 48, 30);
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    #background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Makes sure the video covers the entire section */
+        z-index: -1; /* Ensures that content is above the video */
+    }
+    
+    .content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7ea5aa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(71, 65, 65);
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+            
+        }
+
+        .services-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background-color: #fffbfb;
+            padding: 5px;
+            width: 280px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: scale(1.10);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #555;
+            padding: 5px;
+        }
+
+        .service-card a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: rgb(63, 55, 55);
+            padding: 10px 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .service-card a:hover {
+            background-color: #0056b3;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: #3d3b3b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        
+    </header>
+
+    <section class="services-section">
+        <h2>What We Offer</h2>
+        <div class="service-cards">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+                
+                <img src="img/3d.jpeg" alt="Custom Software">
+                <h3>Custom Software Development</h3>
+                <p>We provide tailored software solutions that fit your business needs.</p>
+                
+                <button onclick="location.href='services.html';">Get Started </button>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="service-card">
+                <div class="card-container"></div>
+                <img src="img/It managed.jpeg" alt="IT Services">
+                <h3>Managed IT Services</h3>
+                <p>Complete IT management and support to keep your business running smoothly.</p>
+                
+                <button onclick="location.href='services.html';">Get Started </button>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card">
+                <img src="img/ecommerce.png" alt="Ecommerce Websites">
+                <h3>Ecommerce Solutions</h3>
+                <p>Building powerful ecommerce platforms that drive sales and engagement.</p>
+                
+                <button onclick="location.href='services.html';">Get Started </button>
+                
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
+
+
+
+<style>
+    
+    .typing {
+      display: inline-block;
+      -webkit-text-fill-color: #111111;
+      border-right: 2px solid black; /* Cursor effect */
+      white-space: nowrap; /* Prevent line break */
+      overflow: hidden; /* Hide overflow text */
+      font-size: 42px;
+      font-weight: bold;
+      animation: typing 4s steps(20, end), blink-caret 0.5s step-end infinite;
+    }
+    @keyframes typing {
+      from {
+        width: 0; /* Start hidden */
+      }
+      to {
+        width: 100%; /* Full text visible */
+      }
+    }
+
+
+    @keyframes gradientBackground {
+    0% {
+        background: linear-gradient(45deg, #b3afad, #eba4c6);
+    }
+    50% {
+        background: linear-gradient(45deg, #619094, #dfa3ee);
+    }
+    100% {
+        background: linear-gradient(45deg, #f7f4f4, #83556b);
+    }
+}
+
+body {
+    animation: gradientBackground 10s ease infinite;
+    background-size: 400% 400%;
+}
+
+
+.hero {
+    background: url('img/clouds.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    
+}
+
+.service-card img {
+    transition: transform 0.3s ease;
+}
+
+.service-card img:hover {
+    transform: scale(1.1);
+}
+
+
+    
+    
+    
+  
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Call us: <strong>+917496074907</strong></p>
+        <p>Email: Vartuetech@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 VartueTech. All Rights Reserved.</p>
+        <p>Follow us on:
+            <a href="https://www.facebook.com/yourprofile" target="_blank">GitHub</a> | 
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> | 
+            <a href="" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+</html>
